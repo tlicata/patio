@@ -90,9 +90,14 @@ var placeAbove = function (stone, belowRow, gap) {
     return Math.min.apply(null, tops) - stone.length - gap;
 };
 
+var delay = 0;
 var drawStone = function (stone) {
-    ctx.fillStyle = stone.color;
-    ctx.fillRect(stone.x, stone.y, stone.width, stone.length);
+    setTimeout(function () {
+        ctx.fillStyle = stone.color;
+        ctx.fillRect(stone.x, stone.y, stone.width, stone.length);
+        ctx.strokeText(stone.id, stone.x + 3, stone.y + 10);
+    }, delay);
+    delay += 100
 };
 
 for (var y = 0; y < positions.length; y++) {
