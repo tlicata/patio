@@ -72,7 +72,10 @@ var findStonesBetween = function (row, leftBound, rightBound) {
     return row.map(function (key) {
         return stones[key];
     }).filter(function (stone) {
-        return stone && (stone.x >= leftBound || stone.x <= rightBound);
+        var rightEdge = stone.x + stone.width; // + GAP?
+        return stone && ((stone.x >= leftBound && stone.x <= rightBound) ||
+                         (rightEdge >= leftBound && rightEdge <= rightBound) ||
+                         (stone.x < leftBound && rightEdge > rightBound));
     });
 };
 
