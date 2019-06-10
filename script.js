@@ -17,19 +17,35 @@ ctx.fill();
 
 // Measurements and positioning of stones
 var stones = {
-    1:  {width: 40,   length: 24,   x: 0, y: 0, color: "red" },
-    2:  {width: 75,   length: 49,   x: 0, y: 0, color: "green" },
-    3:  {width: 34,   length: 49,   x: 0, y: 0, color: "blue" },
-    4:  {width: 48.5, length: 51,   x: 0, y: 0, color: "orange" },
-    5:  {width: 23,   length: 24,   x: 0, y: 0, color: "purple" },
-    11: {width: 24,   length: 25.5, x: 0, y: 0, color: "black" },
-    12: {width: 23.5, length: 25,   x: 0, y: 0, color: "#444444" },
-    13: {width: 58.5, length: 23.5, x: 0, y: 0, color: "#444444" },
-    15: {width: 20,   length: 45,   x: 0, y: 0, color: "#444444" },
-    18: {width: 47,   length: 32,   x: 0, y: 0, color: "#444444" },
-    19: {width: 59.5, length: 36,   x: 0, y: 0, color: "#444444" },
-    47: {width: 12.5, length: 24,   x: 0, y: 0, color: "#444444" },
-    48: {width: 24,   length: 28,   x: 0, y: 0, color: "#444444" }
+    1:  {id: 1,  width: 40,   length: 24,   x: 0, y: 0, color: "red" },
+    2:  {id: 2,  width: 75,   length: 49,   x: 0, y: 0, color: "green" },
+    3:  {id: 3,  width: 34,   length: 49,   x: 0, y: 0, color: "blue" },
+    4:  {id: 4,  width: 48.5, length: 51,   x: 0, y: 0, color: "orange" },
+    5:  {id: 5,  width: 23,   length: 24,   x: 0, y: 0, color: "purple" },
+    6:  {id: 6,  width: 24,   length: 14,   x: 0, y: 0, color: "purple" },
+    7:  {id: 7,  width: 24,   length: 36,   x: 0, y: 0, color: "purple" },
+    8:  {id: 8,  width: 12,   length: 33,   x: 0, y: 0, color: "purple" },
+    9:  {id: 9,  width: 12,   length: 32,   x: 0, y: 0, color: "purple" },
+    10: {id: 10, width: 24,   length: 36,   x: 0, y: 0, color: "purple" },
+    11: {id: 11, width: 24,   length: 25.5, x: 0, y: 0, color: "black" },
+    12: {id: 12, width: 23.5, length: 25,   x: 0, y: 0, color: "yellow" },
+    13: {id: 13, width: 58.5, length: 23.5, x: 0, y: 0, color: "brown" },
+    14: {id: 14, width: 24,   length: 16,   x: 0, y: 0, color: "brown" },
+    15: {id: 15, width: 20,   length: 45,   x: 0, y: 0, color: "grey" },
+    16: {id: 16, width: 24,   length: 48,   x: 0, y: 0, color: "brown" },
+    17: {id: 17, width: 22,   length: 36,   x: 0, y: 0, color: "violet" },
+    18: {id: 18, width: 47,   length: 32,   x: 0, y: 0, color: "gold" },
+    19: {id: 19, width: 59.5, length: 36,   x: 0, y: 0, color: "grey" },
+    20: {id: 20, width: 25.5, length: 24,   x: 0, y: 0, color: "grey" },
+    21: {id: 21, width: 23.5, length: 26,   x: 0, y: 0, color: "grey" },
+    23: {id: 23, width: 24,   length: 31,   x: 0, y: 0, color: "indigo" },
+    24: {id: 24, width: 36,   length: 27,   x: 0, y: 0, color: "teal" },
+    25: {id: 25, width: 30,   length: 26.5, x: 0, y: 0, color: "tan" },
+    26: {id: 26, width: 36,   length: 30,   x: 0, y: 0, color: "honeydew" },
+    27: {id: 27, width: 46.5, length: 29,   x: 0, y: 0, color: "brown" },
+    28: {id: 28, width: 24,   length: 23,   x: 0, y: 0, color: "indianred" },
+    47: {id: 47, width: 12.5, length: 24,   x: 0, y: 0, color: "tomato" },
+    48: {id: 48, width: 24,   length: 28,   x: 0, y: 0, color: "cyan" }
 };
 
 var positions = [
